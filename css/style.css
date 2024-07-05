@@ -1,0 +1,192 @@
+/********** Template CSS - Version Sophistiquée **********/
+:root {
+    --primary: #0463FA;
+    --light: #EFF5FF;
+    --dark: #1B2C51;
+    --accent: #FF6B6B;
+}
+
+/* Typographie sophistiquée */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Bouton sophistiqué */
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--dark);
+}
+
+/* Navbar sophistiquée */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 15px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-brand {
+    font-size: 1.8rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Carrousel d'en-tête sophistiqué */
+.header-carousel .owl-carousel-text {
+    padding: 5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-carousel .owl-nav .owl-prev, 
+.header-carousel .owl-nav .owl-next {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.header-carousel .owl-nav .owl-prev:hover, 
+.header-carousel .owl-nav .owl-next:hover {
+    background-color: var(--dark);
+}
+
+/* Formulaire sophistiqué */
+form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+    height: 50px;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0px 0px 10px rgba(4, 99, 250, 0.5);
+}
+
+form textarea.form-control {
+    resize: none;
+}
+
+form button.btn {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+form button.btn:hover {
+    background-color: var(--dark);
+}
+
+/* Footer sophistiqué */
+.footer {
+    background-color: var(--dark);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer .btn.btn-social {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 45px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.footer .btn.btn-social:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.footer .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Effets d'animation sophistiqués */
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Utilisation des animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.animated.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
